@@ -1,0 +1,64 @@
+# Project: sistema_Multiple
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Menu.o mis_funciones.o Operaciones.o par_impar.o conversor_pedida_peso.o palindromo.o arabigos_romanos.o enteros_letras.o enteros_decimal_letra.o tablas_multiplicar.o grafica_multiplicacion.o decimales_binarios_hexadecimales.o figuras_Geometricas.o
+LINKOBJ  = Menu.o mis_funciones.o Operaciones.o par_impar.o conversor_pedida_peso.o palindromo.o arabigos_romanos.o enteros_letras.o enteros_decimal_letra.o tablas_multiplicar.o grafica_multiplicacion.o decimales_binarios_hexadecimales.o figuras_Geometricas.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = sistema_Multiple.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Menu.o: Menu.cpp
+	$(CPP) -c Menu.cpp -o Menu.o $(CXXFLAGS)
+
+mis_funciones.o: mis_funciones.cpp
+	$(CPP) -c mis_funciones.cpp -o mis_funciones.o $(CXXFLAGS)
+
+Operaciones.o: Operaciones.cpp
+	$(CPP) -c Operaciones.cpp -o Operaciones.o $(CXXFLAGS)
+
+par_impar.o: par_impar.cpp
+	$(CPP) -c par_impar.cpp -o par_impar.o $(CXXFLAGS)
+
+conversor_pedida_peso.o: conversor_pedida_peso.cpp
+	$(CPP) -c conversor_pedida_peso.cpp -o conversor_pedida_peso.o $(CXXFLAGS)
+
+palindromo.o: palindromo.cpp
+	$(CPP) -c palindromo.cpp -o palindromo.o $(CXXFLAGS)
+
+arabigos_romanos.o: arabigos_romanos.cpp
+	$(CPP) -c arabigos_romanos.cpp -o arabigos_romanos.o $(CXXFLAGS)
+
+enteros_letras.o: enteros_letras.cpp
+	$(CPP) -c enteros_letras.cpp -o enteros_letras.o $(CXXFLAGS)
+
+enteros_decimal_letra.o: enteros_decimal_letra.cpp
+	$(CPP) -c enteros_decimal_letra.cpp -o enteros_decimal_letra.o $(CXXFLAGS)
+
+tablas_multiplicar.o: tablas_multiplicar.cpp
+	$(CPP) -c tablas_multiplicar.cpp -o tablas_multiplicar.o $(CXXFLAGS)
+
+grafica_multiplicacion.o: grafica_multiplicacion.cpp
+	$(CPP) -c grafica_multiplicacion.cpp -o grafica_multiplicacion.o $(CXXFLAGS)
+
+decimales_binarios_hexadecimales.o: decimales_binarios_hexadecimales.cpp
+	$(CPP) -c decimales_binarios_hexadecimales.cpp -o decimales_binarios_hexadecimales.o $(CXXFLAGS)
+
+figuras_Geometricas.o: figuras_Geometricas.cpp
+	$(CPP) -c figuras_Geometricas.cpp -o figuras_Geometricas.o $(CXXFLAGS)
