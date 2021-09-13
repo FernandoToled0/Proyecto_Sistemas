@@ -12,8 +12,7 @@ void entero_letra(){
 	
 	TextColor(10);
 	
-	Say(17
-	,2,"---Enteros a letras--"); 
+	Say(17,2,"---Enteros a letras--"); 
 	SetColorB(2,19);		  
 	Rectangle(1,4,49,44,"#"); 
 	SetColorA(2,22);  
@@ -26,7 +25,7 @@ void entero_letra(){
 	;Gotoxy(3,10);
 	
 	if((x<1)||(x>999)) cout<<"INGRESA UN NUMERO DEL 1 AL 999\n";
-else
+	else
  
     {
         if(x>=900)   {cout<<"NOVECIENTOS " ;x=x-900;}

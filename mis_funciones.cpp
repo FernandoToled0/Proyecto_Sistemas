@@ -135,7 +135,9 @@ void MENU::Set_Space(int s)
 }
 
 int MENU::Draw(int x,int y)
-{   int tecla;
+{   
+//fflush(stdin);
+int tecla;
 	bool Sel=false;
 	int FILA;
 	while(tecla!=13) 

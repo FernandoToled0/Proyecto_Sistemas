@@ -13,8 +13,7 @@ void palindromo(){
 	
 	TextColor(10);
 	
-	Say(17
-	,2,"---Palindromo--"); 
+	Say(17,2,"---Palindromo--"); 
 	SetColorB(2,19);		  
 	Rectangle(1,4,49,44,"#"); 
 	SetColorA(2,22);  

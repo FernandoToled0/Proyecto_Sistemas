@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = Menu.o mis_funciones.o Operaciones.o par_impar.o conversor_pedida_peso.o palindromo.o arabigos_romanos.o enteros_letras.o enteros_decimal_letra.o tablas_multiplicar.o grafica_multiplicacion.o decimales_binarios_hexadecimales.o figuras_Geometricas.o
-LINKOBJ  = Menu.o mis_funciones.o Operaciones.o par_impar.o conversor_pedida_peso.o palindromo.o arabigos_romanos.o enteros_letras.o enteros_decimal_letra.o tablas_multiplicar.o grafica_multiplicacion.o decimales_binarios_hexadecimales.o figuras_Geometricas.o
+OBJ      = Menu.o mis_funciones.o Operaciones.o par_impar.o conversor_pedida_peso.o palindromo.o arabigos_romanos.o enteros_letras.o enteros_decimal_letra.o tablas_multiplicar.o grafica_multiplicacion.o decimales_binarios_hexadecimales.o figuras_Geometricas.o cajero.o hipotenusa.o programas_propios.o punto.o
+LINKOBJ  = Menu.o mis_funciones.o Operaciones.o par_impar.o conversor_pedida_peso.o palindromo.o arabigos_romanos.o enteros_letras.o enteros_decimal_letra.o tablas_multiplicar.o grafica_multiplicacion.o decimales_binarios_hexadecimales.o figuras_Geometricas.o cajero.o hipotenusa.o programas_propios.o punto.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -62,3 +62,15 @@ decimales_binarios_hexadecimales.o: decimales_binarios_hexadecimales.cpp
 
 figuras_Geometricas.o: figuras_Geometricas.cpp
 	$(CPP) -c figuras_Geometricas.cpp -o figuras_Geometricas.o $(CXXFLAGS)
+
+cajero.o: cajero.cpp
+	$(CPP) -c cajero.cpp -o cajero.o $(CXXFLAGS)
+
+hipotenusa.o: hipotenusa.cpp
+	$(CPP) -c hipotenusa.cpp -o hipotenusa.o $(CXXFLAGS)
+
+programas_propios.o: programas_propios.cpp
+	$(CPP) -c programas_propios.cpp -o programas_propios.o $(CXXFLAGS)
+
+punto.o: punto.cpp
+	$(CPP) -c punto.cpp -o punto.o $(CXXFLAGS)
